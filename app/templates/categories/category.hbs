@@ -1,0 +1,6 @@
+<ul>
+  {{#each model.categories as |category|}}
+    <li class="category">{{link-to category.name "categories" category}}</li>
+  {{/each}}
+
+</ul>

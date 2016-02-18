@@ -5,6 +5,6 @@ export default DS.Model.extend({
   monthly_salary: DS.attr('string'),
   password: DS.attr('string'),
   password_confirmation: DS.attr('string'),
-  categories: DS.hasMany('category'),
-  expenses: DS.hasMany('expense')
+  categories: DS.hasMany('category', { async: true }),
+  expenses: DS.hasMany('expense', { async: true })
 });
