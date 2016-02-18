@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  users: DS.belongsTo('user')
+  users: DS.belongsTo('user', { async: true })
 });

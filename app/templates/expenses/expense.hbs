@@ -1,0 +1,6 @@
+<ul>
+  {{#each model.expenses as |expense|}}
+    <li class="expenses">{{link-to expense.amount "expenses" expense}}</li>
+  {{/each}}
+
+</ul>
