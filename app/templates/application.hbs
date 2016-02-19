@@ -4,6 +4,10 @@
 <li>{{link-to "Categories" "categories"}}</li>
 <li>{{link-to "Expenses" "expenses"}}</li>
 
-
+{{#if session.isAuthenticated}}
+  <li>Log Out</li>
+{{else}}
+  <li>{{link-to 'Log In' 'login'}}</li>
+{{/if}}
 
 {{outlet}}
