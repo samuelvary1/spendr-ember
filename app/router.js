@@ -9,8 +9,6 @@ Router.map(function() {
   this.route('users');
   this.route('categories');
   this.route('expenses');
-  this.route('sign_in');
-  this.route('sign_out');
   this.route('login');
 });
 
