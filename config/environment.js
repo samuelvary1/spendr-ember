@@ -1,9 +1,7 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
-
   var ENV = {
-    contentSecurityPolicy: {'connect-src': "*"},
     modulePrefix: 'spendr-ember',
     environment: environment,
     baseURL: '/',
