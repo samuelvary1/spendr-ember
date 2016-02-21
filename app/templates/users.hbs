@@ -4,7 +4,7 @@ Users:
 <ul>
   {{#each model as |user|}}
   <li class="users">
-    {{user.username}}
+    {{link-to user.username "users.user" user}}
   </li>
   {{/each}}
 
