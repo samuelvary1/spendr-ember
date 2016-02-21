@@ -9,7 +9,7 @@ export default Ember.Route.extend({
       let model = this.modelFor(this.routeName);
 
       model.save().then((expense) => {
-        this.transitionTo("expenses.expense", expense)
+        this.transitionTo("expenses.expense", expense);
       });
     }
   }
