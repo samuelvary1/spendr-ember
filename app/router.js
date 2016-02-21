@@ -14,6 +14,7 @@ Router.map(function() {
   });
   this.route('expenses', function() {
     this.route('new');
+    this.route('expense', {path: ":expense_id"});
   });
   this.route('login');
 });
