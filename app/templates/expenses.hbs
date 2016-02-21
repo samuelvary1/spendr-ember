@@ -6,6 +6,7 @@ Expenses:
   <li class="expenses">
     ${{expense.amount}} for {{expense.note}}
   </li>
+   <button {{action 'delete' expense}} type="button" class="button alert tiny">Delete</button>
   {{/each}}
 </ul>
 
