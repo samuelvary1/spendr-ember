@@ -10,7 +10,11 @@ export default Ember.Route.extend( {
   		this.modelFor(this.routeName).pushObject(
   			newCategory);
   		this.controllerFor(this.routeName).send("resetForm");
-  	}
+  	},
+    delete(category) {
+      category.destroyRecord();
+      this.transitionTo('categories.index');
+    }
   }
 });
 
