@@ -11,7 +11,11 @@ export default Ember.Route.extend( {
   		this.modelFor(this.routeName).pushObject(
   			newExpense);
   		this.controllerFor(this.routeName).send("resetForm");
-  	}
+  	},
+    delete(expense) {
+      expense.destroyRecord();
+      this.transitionTo('expenses.index');
+    }
   }
 });
 
@@ -21,4 +25,3 @@ export default Ember.Route.extend( {
 // percentage of total spending towards which categories
 
 // percent remaining in budget / wages
-
