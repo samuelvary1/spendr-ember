@@ -5,6 +5,13 @@ Categories:
   <li class="categories">
     {{category.name}}
   </li>
+  <button {{action 'delete' category}} type="button" class="button alert tiny">Delete</button>
+
   {{/each}}
 
 </ul>
+
+
+<p>
+	{{link-to "Add a new category!" "categories.new"}}
+</p>
