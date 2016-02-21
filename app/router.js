@@ -8,7 +8,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('users');
   this.route('categories');
-  this.route('expenses');
+  this.route('expenses', function() {
+    this.route('new');
+  });
   this.route('login');
 });
 
