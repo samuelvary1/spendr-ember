@@ -6,3 +6,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     return this.store.findAll('user');
   }
 });
+
+
+// calculate weekly salary based on monthly
+

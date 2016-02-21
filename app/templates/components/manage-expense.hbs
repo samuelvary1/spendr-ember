@@ -1,0 +1,12 @@
+<form class="form-horizontal" {{action "submit" on="submit"}}>
+  <div class="form-group">
+    <label for="expense-amount">Amount</label>
+    {{input value=expense.amount class="form-control" id="expense-amount"}}
+  </div>
+  <div class="form-group">
+    <label for="expense-note">Note</label>
+    {{input value=expense.note class="form-control" id="expense-note"}}
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

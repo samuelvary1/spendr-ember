@@ -1,10 +1,19 @@
 {{outlet}}
+
 Expenses:
 <ul>
   {{#each model as |expense|}}
   <li class="expenses">
-    {{expense.amount}}
+    ${{expense.amount}} for {{expense.note}}
   </li>
   {{/each}}
-
 </ul>
+
+
+<p>
+	Total expenses: $0
+</p>
+
+<p>
+	{{link-to "Add a new expense!" "expenses.new"}}
+</p>
