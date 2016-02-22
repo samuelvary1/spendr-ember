@@ -1,16 +1,18 @@
-<h2 id="title">Spendr!</h2>
-<h3>The all-in-one budget and expense management application</h3>
-<ul class='list-inline'>
-  <li>{{link-to "User" "users"}}</li>
-  <li>{{link-to "Categories" "categories"}}</li>
-  <li>{{link-to "Expenses" "expenses"}}</li>
-  {{#if session.isAuthenticated}}
-    <li><button {{action "logout"}}>Logout</button></li>
-  {{else}}
-    <li>{{link-to 'Login' 'login'}}</li>
-  {{/if}}
-
-</ul>
 
 
-{{outlet}}
+<div class="container">
+  <div class="row">
+    <ul class='list-inline'>
+      <li>{{link-to "User" "users"}}</li>
+      <li>{{link-to "Categories" "categories"}}</li>
+      <li>{{link-to "Expenses" "expenses"}}</li>
+      {{#if session.isAuthenticated}}
+        <li><button class="btn btn-default" {{action "logout"}}>Logout</button></li>
+      {{else}}
+        <li>{{link-to 'Login' 'login'}}</li>
+      {{/if}}
+    </ul>
+    <h2 id="title">Welcome to Spendr!</h2>
+  </div>
+  {{outlet}}
+</div>

@@ -15,6 +15,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     delete(expense) {
       expense.destroyRecord();
       this.transitionTo('expenses.index');
+    },
+
+    totalExpenses(){
+      this.modelFor(this.routeName)
     }
   }
 });

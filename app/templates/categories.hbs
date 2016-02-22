@@ -1,15 +1,18 @@
 {{outlet}}
-Categories:
-<ul>
-  {{#each model as |category|}}
-  <li class="categories">
-    {{category.name}}
-  </li>
-  <button {{action 'delete' category}} type="button" class="button alert tiny">Delete</button>
+<h3>Categories:</h3>
 
-  {{/each}}
-
-</ul>
+<div class="container">
+	<div class="row">
+		<ul class="list-inline">
+			{{#each model as |category|}}
+			 <li><button {{action 'delete' category}} class="btn btn-default">Delete</button></li>
+			<li>
+			  {{category.name}}
+			</li><br><br>
+	  {{/each}}
+		</ul>
+	</div>
+</div>
 
 
 <p>

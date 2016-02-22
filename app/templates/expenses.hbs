@@ -1,18 +1,22 @@
 {{outlet}}
 
-Expenses:
-<ul>
-  {{#each model as |expense|}}
-  <li class="expenses">
-    ${{expense.amount}} for {{expense.note}}
-  </li>
-   <button {{action 'delete' expense}} type="button" class="button alert tiny">Delete</button>
-  {{/each}}
-</ul>
+<h3>Expenses:</h3>
+<div class="container">
+	<div class="row">
+		<ul class="list-inline">
+			{{#each model as |expense|}}
+			 <li><button {{action 'delete' expense}} class="btn btn-default">Delete</button></li>
+			<li>
+			  ${{expense.amount}} for {{expense.note}}
+			</li><br><br>
+	  {{/each}}
+		</ul>
+	</div>
+</div>
 
 
 <p>
-	Total expenses: $0
+	Total expenses: 
 </p>
 
 <p>
