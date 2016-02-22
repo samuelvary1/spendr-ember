@@ -7,7 +7,7 @@
 			{{#each model as |expense|}}
 			 <li><button {{action 'delete' expense}} class="btn btn-default">Delete</button></li>
 			<li>
-			  ${{expense.amount}} for {{expense.note}}
+			  $<span id="expense-amount">{{expense.amount}}</span> for {{expense.note}}
 			</li><br><br>
 	  {{/each}}
 		</ul>
@@ -15,8 +15,8 @@
 </div>
 
 
-<p>
-	Total expenses: 
+<p id="total">
+	Total Expenses: {{model.total}}
 </p>
 
 <p>
