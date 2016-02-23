@@ -1,6 +1,12 @@
 import Ember from 'ember';
+const { service } = Ember.inject;
+const { store } = Ember.inject;
 
 export default Ember.Controller.extend({
+
+session: service('session'),
+store: service("store"),
+
   session: Ember.inject.service('session'),
   actions: {
    authenticate() {

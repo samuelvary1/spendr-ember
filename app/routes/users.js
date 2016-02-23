@@ -9,7 +9,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
   actions: {
     delete(user) {
       user.destroyRecord();
-      this.transitionToRoute('users.index');
+      this.transitionTo('users.index');
     }
   }
 });
