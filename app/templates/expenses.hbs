@@ -5,7 +5,7 @@
 	<div class="row">
 		<ul class="list-inline">
 			{{#each model as |expense|}}
-			 <li><button {{action 'delete' expense}} class="btn btn-default">Delete</button></li>
+			 <li><button {{action 'delete' expense}} class="btn btn-primary btn-xs">Delete</button></li>
 			<li>
 			  $<span id="expense-amount">{{expense.amount}}</span> for {{expense.note}}
 			</li><br><br>
