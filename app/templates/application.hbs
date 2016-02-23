@@ -8,12 +8,13 @@
       <li>{{link-to "Expenses" "expenses"}}</li>
       <li>{{link-to "Sign Up" "signup"}}</li>
       {{#if session.isAuthenticated}}
-        <li><button class="btn btn-default" {{action "logout"}}>Logout</button></li>
+        <li><button class="btn btn-primary btn-sm" {{action "logout"}}>Logout</button></li>
       {{else}}
         <li>{{link-to 'Login' 'login'}}</li>
       {{/if}}
+      <li>Spendr</li>
     </ul>
-    <h2 id="title">Welcome to Spendr!</h2>
+
   </div>
   {{outlet}}
 </div>

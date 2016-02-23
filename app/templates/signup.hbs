@@ -1,8 +1,10 @@
-<h2>Sign Up</h2>
+<h2 id="title">Spendr - Here to help budget your spending.</h2>
+
+<h4>Sign Up</h4>
 
 <form {{action 'createUser' on="submit"}}>
   <label for="identification">Username:</label>
-  {{input id='identification' placeholder='Username' value=userName type="username"}}<br>
+  {{input id='username' placeholder='Username' value=userName type="username"}}<br>
 
   <label for="identification">Monthly Salary:</label>
   {{input id='monthly_salary' placeholder='Monthly Salary' value=monthly_salary type="monthly_salary"}}<br>
@@ -12,5 +14,5 @@
 
   <label for="password_confirmation">Password Confirmation:</label>
   {{input id='password_confirmation' placeholder='Password Confirmation' type='password' value=password_confirmation}}<br>
-  <button type="submit">Sign up</button>
+  <button type="submit" class="btn btn-default btn-sm">Sign up</button>
 </form>
