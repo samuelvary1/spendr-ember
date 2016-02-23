@@ -4,6 +4,7 @@ export default Ember.Controller.extend({
  applicationController: Ember.inject.controller('application'),
  actions: {
    setCurrentUser(user){
+     debugger;
      this.get("applicationController").set('currentUser', user);
    }
  }
