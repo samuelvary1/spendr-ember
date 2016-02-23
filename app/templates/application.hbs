@@ -15,6 +15,12 @@
       <li>Spendr</li>
     </ul>
 
+    {{#if currentUser}}
+   <li class="active">
+     <a href="#">Hi, {{currentUser.name}}</a>
+   </li>
+   {{/if}}
+
   </div>
   {{outlet}}
 </div>

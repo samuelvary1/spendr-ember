@@ -1,8 +1,10 @@
 <h2>Login</h2>
 
+{{login-form triggerSetCurrentUser=(action "setCurrentUser")}}
+
 <form {{action 'authenticate' on='submit'}}>
   <div class="username">
-    <label for="identification">Username</label>
+    <label for="identification">Username</  label>
     {{input id='identification' placeholder='Enter Username' value=identification type="username"}}
   </div><br>
   <div class="password">
