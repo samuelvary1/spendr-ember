@@ -7,7 +7,7 @@
       <li>{{link-to "Categories" "categories"}}</li>
       <li>{{link-to "Expenses" "expenses"}}</li>
       {{#if session.isAuthenticated}}
-        <li><button class="btn btn-default" {{action "logout"}}>Logout</button></li>
+        <li><button class="btn btn-primary btn-sm" {{action "logout"}}>Logout</button></li>
       {{else}}
         <li>{{link-to 'Login' 'login'}}</li>
       {{/if}}
