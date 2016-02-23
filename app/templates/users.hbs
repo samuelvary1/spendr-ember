@@ -1,11 +1,17 @@
 {{outlet}}
 
-Users:
-<ul>
-  {{#each model as |user|}}
-  <li class="users">
-    {{link-to user.username "users.user" user}}
-  </li>
-  {{/each}}
-
-</ul>
+<h3>Users:</h3>
+<div class="container">
+	<div class="row">
+		<ul class="list-inline">
+			{{#each model as |user|}}
+			 <li><button {{action 'delete' user}} class="btn btn-primary btn-xs">Delete User</button></li>
+			<li>
+			  <span id="user">
+          {{link-to user.username "users.user" user}}
+        </span>
+			</li><br><br>
+	  {{/each}}
+		</ul>
+	</div>
+</div>

@@ -19,7 +19,6 @@ export default Ember.Route.extend({
       var expense = $("#expense-amount").val();
       allExpenses.pushObject(parseInt(expense));
 
-
       for(var i = 0; i < allExpenses.length; i++) {
           total += allExpenses[i];
       }

@@ -5,14 +5,15 @@
 <form {{action 'createUser' on="submit"}}>
   <label for="identification">Username:</label>
   {{input id='username' placeholder='Username' value=userName type="username"}}<br>
-
+  <br>
   <label for="identification">Monthly Salary:</label>
   {{input id='monthly_salary' placeholder='Monthly Salary' value=monthly_salary type="monthly_salary"}}<br>
-
+  <br>
   <label for="password">Password:</label>
   {{input id='password' placeholder='Password' type='password' value=password}}<br>
-
+  <br>
   <label for="password_confirmation">Password Confirmation:</label>
   {{input id='password_confirmation' placeholder='Password Confirmation' type='password' value=password_confirmation}}<br>
+  <br>
   <button type="submit" class="btn btn-default btn-sm">Sign up</button>
 </form>
