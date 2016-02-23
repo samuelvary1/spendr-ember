@@ -3,6 +3,7 @@
 <div class="container">
   <div class="row">
     <ul class='list-inline'>
+      <li>Spendr</li>
       <li>{{link-to "User" "users"}}</li>
       <li>{{link-to "Categories" "categories"}}</li>
       <li>{{link-to "Expenses" "expenses"}}</li>
@@ -12,14 +13,11 @@
       {{else}}
         <li>{{link-to 'Login' 'login'}}</li>
       {{/if}}
-      <li>Spendr</li>
+      <li>{{#if currentUser}}
+        <a href="#">Hi, {{currentUser.username}}</a>
+        {{/if}}</li>
     </ul>
 
-    {{#if currentUser}}
-   <li class="active">
-     <a href="#">Hi, {{currentUser.username}}</a>
-   </li>
-   {{/if}}
 
   </div>
   {{outlet}}
