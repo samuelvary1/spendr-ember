@@ -17,13 +17,13 @@ export default Ember.Route.extend({
         this.transitionTo("expenses.expense", expense);
 
       var expense = $("#expense-amount").val();
-      allExpenses.push(parseInt(expense));
+      allExpenses.pushObject(parseInt(expense));
 
 
       for(var i = 0; i < allExpenses.length; i++) {
           total += allExpenses[i];
       }
-      debugger;
+
       });
     }
   }
