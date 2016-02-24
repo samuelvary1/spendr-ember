@@ -4,7 +4,7 @@
   <div class="row">
     <ul class='list-inline'>
       <li>Spendr</li>
-      <li>{{link-to "User" "users"}}</li>
+      <li>{{link-to "Profile" "users"}}</li>
       <li>{{link-to "Categories" "categories"}}</li>
       <li>{{link-to "Expenses" "expenses"}}</li>
       <li>{{link-to "Sign Up" "signup"}}</li>
@@ -14,7 +14,7 @@
         <li>{{link-to 'Login' 'login'}}</li>
       {{/if}}
       <li>{{#if currentUser}}
-        <a href="#">Hi, {{currentUser.username}}</a>
+        Hi, {{currentUser.username}}
         {{/if}}</li>
     </ul>
 
