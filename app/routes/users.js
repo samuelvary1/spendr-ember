@@ -4,9 +4,15 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
   model: function(){
     return this.store.findAll('user');
+  },
+
+  actions: {
+    delete(user) {
+      user.destroyRecord();
+      this.transitionTo('users.index');
+    }
   }
 });
 
 
 // calculate weekly salary based on monthly
-
