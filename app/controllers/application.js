@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  // currentUser: null,
+  currentUser: null,
   session: Ember.inject.service('session'),
   actions: {
     logout(){
