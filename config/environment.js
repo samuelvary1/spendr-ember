@@ -41,7 +41,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.API_HOST = "https://desolate-falls-11389.herokuapp.com"
+    ENV.APP.API_HOST = "https://desolate-falls-11389.herokuapp.com";
   }
 
   return ENV;
