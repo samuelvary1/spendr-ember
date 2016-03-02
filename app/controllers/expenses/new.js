@@ -12,8 +12,8 @@ export default Ember.Controller.extend({
     actions: {
       createExpense(){
         let expense = this.get('model');
-        console.log(expense.get('categories'));
-        console.log(expense.get('categories').objectAt(0).get('name'));
+        console.log(expense.get('category'));
+        console.log(expense.get('category').objectAt(0).get('name'));
         expense.save().then((expense) => {
           this.transitionToRoute("expenses.expense", expense);
           });
