@@ -8,6 +8,18 @@
     {{input id='expense-note' placeholder='Notes' value=expense.note class="form-control"}}
   </div>
 
+    <label>Categories:</label>
+    {{simple-select
+      content=allCategories
+      selection=currentlySelectedObject
+      optionLabelPath="name"
+      optionValuePath="id"
+      prompt="Choose a Category"
+      action="selectACategory"
+    }}
+
+
+
 
   <button type="submit" class="btn btn-default btn-sm">Submit</button>
 </form><br>

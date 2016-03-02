@@ -1,1 +1,6 @@
-{{manage-expense expense=model onSubmit="createExpense"}}
+{{manage-expense expense=model
+  onSubmit="createExpense"
+  currentUser=currentUser
+  allCategories=allCategories
+
+  triggerUpdateSelectedCategory="updateSelectedCategory"}}
