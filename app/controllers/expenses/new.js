@@ -20,9 +20,11 @@ export default Ember.Controller.extend({
         },
 
       updateSelectedCategory(selectedCat){
-
+        console.log(selectedCat);
         var expense = this.get('model');
+        console.log(expense.get("category"));
         expense.set('category', selectedCat);
+        console.log(expense.get("category"));
         }
       }
 });
