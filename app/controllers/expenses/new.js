@@ -12,14 +12,14 @@ export default Ember.Controller.extend({
     actions: {
       createExpense(){
         let expense = this.get('model');
-        debugger;
+
         expense.save().then((expense) => {
           this.transitionToRoute("expenses.expense", expense);
           });
         },
 
       updateSelectedCategory(selectedCat){
-        debugger;
+
         var expense = this.get('model');
         expense.set('category', selectedCat);
         }

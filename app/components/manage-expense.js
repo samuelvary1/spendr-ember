@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     },
 
     selectACategory(selection, value){
-      debugger;
+
       this.sendAction('triggerUpdateSelectedCategory', selection);
     }
   }
