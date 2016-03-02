@@ -1,6 +1,7 @@
 import DeviseAuthenticator from 'ember-simple-auth/authenticators/devise';
+import ENV from '../config/environment';
 
 export default DeviseAuthenticator.extend({
- serverTokenEndpoint: 'https://desolate-falls-11389.herokuapp.com/users/sign-in',
+ serverTokenEndpoint: ENV.APP.API_HOST + '/users/sign_in',
  identificationAttributeName: 'username'
 });
