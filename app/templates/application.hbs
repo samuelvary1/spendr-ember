@@ -13,15 +13,10 @@
       {{else}}
         <li>{{link-to 'Login' 'login'}}</li>
       {{/if}}
-      <li>
-        {{#if currentUser}}
-          Hi, {{currentUser.username}}
-        {{else}}
-          <h2 id="title">Spendr - Here to help budget your spending</h2>
-        {{/if}}
-      </li>
+      <li>{{#if currentUser}}
+        Hi, {{currentUser.username}}
+        {{/if}}</li>
     </ul>
-
   </div>
   {{outlet}}
 </div>
